@@ -1,0 +1,108 @@
+
+C:\Users\Chira>docker pull devopsdockeruh/simple-web-service:ubuntu
+ubuntu: Pulling from devopsdockeruh/simple-web-service
+5d3b2c2d21bb: Pull complete
+3fc2062ea667: Pull complete
+75adf526d75b: Pull complete
+965d4bbb586a: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:d44e1dce398732e18c7c2bad9416a072f719af33498302b02929d4c112e88d2a
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:ubuntu
+docker.io/devopsdockeruh/simple-web-service:ubuntu
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview devopsdockeruh/simple-web-service:ubuntu
+
+C:\Users\Chira>docker pull devopsdockeruh/simple-web-service:alpine
+alpine: Pulling from devopsdockeruh/simple-web-service
+ba3557a56b15: Pull complete
+1dace236434b: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+docker.io/devopsdockeruh/simple-web-service:alpine
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview devopsdockeruh/simple-web-service:alpine
+
+C:\Users\Chira>docker images -a
+REPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 years ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 years ago   15.7MB
+
+C:\Users\Chira>docker run -it fd
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+
+C:\Users\Chira>docker container exec -it 5a /bin/sh
+Error response from daemon: No such container: 5a
+
+C:\Users\Chira>docker container exec -it 4a /bin/sh
+/usr/src/app # tail -f ./text.log
+2023-10-14 08:47:45 +0000 UTC
+2023-10-14 08:47:47 +0000 UTC
+2023-10-14 08:47:49 +0000 UTC
+2023-10-14 08:47:51 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-10-14 08:47:53 +0000 UTC
+2023-10-14 08:47:55 +0000 UTC
+2023-10-14 08:47:57 +0000 UTC
+2023-10-14 08:47:59 +0000 UTC
+2023-10-14 08:48:01 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-10-14 08:48:03 +0000 UTC
+2023-10-14 08:48:05 +0000 UTC
+2023-10-14 08:48:07 +0000 UTC
+2023-10-14 08:48:09 +0000 UTC
+read escape sequence
