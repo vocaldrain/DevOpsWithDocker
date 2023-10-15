@@ -1,9 +1,5 @@
-FROM alpine:3.13
-
+FROM ubuntu:20.04
 WORKDIR /usr/src/app
-
 COPY hello.sh .
-
-RUN chmod +x hello.sh
-
+RUN apt-get update && apt-get install -y curl
 CMD ./hello.sh
