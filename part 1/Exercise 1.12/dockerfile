@@ -1,0 +1,6 @@
+FROM node:16
+WORKDIR ./app
+EXPOST 5000
+COPY ./example-frontend .
+RUN npm install
+CMD ["npm","start"]

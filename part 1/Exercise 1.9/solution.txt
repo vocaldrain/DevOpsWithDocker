@@ -1,0 +1,1 @@
+docker run -v "C:\Users\Chira\DevOpsWithDocker\part 1\Exercise 1.9/log.txt:/usr/src/app/text.log" devopsdockeruh/simple-web-service
