@@ -1,0 +1,2 @@
+#Trick is to choose a higher number and scale compute.
+docker compose up --scale compute=10

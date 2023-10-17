@@ -1,0 +1,7 @@
+# To build frontend(Execute following commands from frontend directory)
+$ docker build . -t frontend
+$ docker run -d 3000:3000 frontend
+
+# To build backend(Execute below commands from backend directory)
+$ docker build . -t backend
+$ docker run -d 8080:8080 backend

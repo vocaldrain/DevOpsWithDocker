@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ../../part 1/Exercise 1.14/backend/  
+      dockerfile: dockerfile 
+    ports:
+      - "8080:8080"
+    environment:
+      - REDIS_HOST=redis
+    
+  frontend:
+    build: 
+      context: ../../part 1/Exercise 1.14/frontend/
+      dockerfile: dockerfile
+    ports:
+      - "3000:3000"
+    
+  redis:
+      image: redis
+      ports:
+        - "6379:6379"
+      

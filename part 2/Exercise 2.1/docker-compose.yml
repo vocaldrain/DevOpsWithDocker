@@ -4,4 +4,4 @@ services:
     image: devopsdockeruh/simple-web-service
     build: .
     volumes:
-    - ./logs.txt:/usr/src/app/text.log
+      - ./log.txt:/usr/src/app/text.log
