@@ -1,0 +1,9 @@
+FROM golang
+WORKDIR ./app
+COPY ./example-backend .
+RUN go build \
+	go test ./... \
+	rm -rf /var/lib/apt/lists/*
+EXPOSE 8080
+ENV REQUEST_ORIGIN=http://localhost:3000
+CMD ["./server"]

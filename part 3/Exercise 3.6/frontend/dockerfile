@@ -1,0 +1,8 @@
+FROM node:16
+WORKDIR ./app
+EXPOSE 3000
+COPY ./example-frontend .
+RUN npm install && \
+	rm -rf /var/lib/apt/lists/*
+ENV REACT_APP_BACKEND_URL=http://localhost:8080
+CMD ["npm","start"]	

@@ -30,12 +30,14 @@ services:
     build:
       context: ../../part 1/Exercise 1.14/backend/  
       dockerfile: dockerfile 
+    
     ports:
       - "8080:8080"
     environment:
       - REDIS_HOST=redis
       - POSTGRES_HOST=postgres
       - POSTGRES_PASSWORD=postgres
+      - REQUEST_ORIGIN=http://nginx/
     depends_on:
       - redis
       - postgres

@@ -4,5 +4,5 @@ COPY ./example-backend .
 RUN go build
 RUN go test ./...
 EXPOSE 8080
-ENV REQUEST_ORIGIN=http://localhost:3000
+ENV REQUEST_ORIGIN=http://localhost
 CMD ["./server"]

@@ -1,0 +1,10 @@
+FROM node:21-alpine3.17
+WORKDIR ./app
+EXPOSE 3000
+COPY ./example-frontend .
+RUN npm install && \
+	adduser -S locall && \
+	rm -rf /var/lib/apt/lists/*
+ENV REACT_APP_BACKEND_URL=http://localhost:8080
+USER locall
+CMD ["npm","start"]	
